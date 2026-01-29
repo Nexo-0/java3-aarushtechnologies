@@ -27,7 +27,7 @@
 <form method="post">
     <input type="text" name="username" placeholder="Enter your name" required>
     <br><br>
-    <button type="submit">Don't Submit</button>
+    <button type="submit">Don't Submit Button</button>
 </form>
 
 <%
