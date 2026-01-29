@@ -1,10 +1,44 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" %>
+<!DOCTYPE html>
 <html>
 <head>
-<title> Welcome to Deployment Day </title>
+    <title>JSP Practice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            text-align: center;
+            padding-top: 80px;
+        }
+        input {
+            padding: 8px;
+            width: 220px;
+        }
+        button {
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-<h1> Kunal Petare</h1>
-<a href="About.jsp"> About Page</a>
-<h3 style="color:green">Nexus Done - 3.0.0 lived</h3>
+
+<h1>JSP Deployment Test</h1>
+
+<form method="post">
+    <input type="text" name="username" placeholder="Enter your name" required>
+    <br><br>
+    <button type="submit">Submit</button>
+</form>
+
+<%
+    String name = request.getParameter("username");
+    if (name != null) {
+%>
+    <h2>Welcome, <%= name %> 👋</h2>
+    <p>Your JSP setup is working fine.</p>
+<%
+    }
+%>
+
 </body>
 </html>
