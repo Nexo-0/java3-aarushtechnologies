@@ -22,7 +22,7 @@
 </head>
 <body>
 
-<h1>JSP Deployment Test</h1>
+<h1>Enter your name for version</h1>
 
 <form method="post">
     <input type="text" name="username" placeholder="Enter your name" required>
@@ -35,7 +35,7 @@
     if (name != null) {
 %>
     <h2>Welcome, <%= name %> 👋</h2>
-    <p>Your JSP setup is working fine.</p>
+    <p>Version = 1.0.0</p>
 <%
     }
 %>
